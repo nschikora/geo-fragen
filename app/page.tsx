@@ -13,8 +13,8 @@ interface Topic {
 
 function Question(question: Question) {
   return (
-    <div className="p-4 col-span-1 flex flex-col items-center">
-      <div className="flex items-center text-center">
+    <div className="p-4 col-span-1 flex flex-col items-center break-inside-avoid-page">
+      <div className="flex items-center text-center break-after-avoid-page">
         <h2 className="text-xl mb-4">{question.q}</h2>
       </div>
       <p
@@ -32,7 +32,7 @@ function Question(question: Question) {
 function Topic(topic: Topic) {
   return (
     <div>
-      <div className="text-center my-4">
+      <div className="text-center my-4 break-after-avoid-page">
         <h1 className="text-xl font-bold">{topic.title}</h1>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
